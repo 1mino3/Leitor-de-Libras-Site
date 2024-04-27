@@ -1,88 +1,57 @@
 @charset "UTF-8";
 
-
 /* Configurações globais */
 
 * {
+    box-sizing: border-box;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-image: linear-gradient(to bottom, rgb(24, 204, 24), rgb(219, 255, 219));
-    background-attachment: fixed;
     font-family: Arial, sans-serif;
+    background-attachment: fixed;
 }
 
 /* NavBar */
 
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 40px;
-    margin-top: 20px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav p {
+    font-size: 16px;
 }
 
 /* main */
 
-/* Configurações gerais do main */
-
 main {
     background-color: rgba(9, 94, 9, 0.253);
-    margin-left: 370px;
-    margin-right: 370px;
-    padding: 50px;
-    border-radius: 35px;
-}
-
-/* Título */
-
-#titulo {
-    font-size: 45px;
-    margin: 10px;
-    margin-bottom: 40px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#login {
-    background-color: rgba(9, 94, 9, 0.116);
-    padding: 20%;
+    margin: 20px;
+    padding: 20px;
     border-radius: 20px;
 }
 
-h2 {
-    margin: 10px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+#titulo {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* login */
-
-label,
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="email"],
-input[type="tel"] {
-    border-radius: 15px;
-    padding: 10px;
-    margin: 5px;
-    border: none;
+.content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-input[type="submit"] {
-    background-color: rgb(9, 94, 9);
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(3, 66, 3);
-    transition: 0.4s;
+.content p {
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) { /* responsividade */
@@ -97,6 +66,7 @@ input[type="submit"]:hover {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 span { /* link da NavBar em destaque */
@@ -121,4 +91,12 @@ span:hover {
     margin-right: 15px;
     text-shadow: 0.2px 0.2px 0.7px black;
     transition: 0.4s;
+}
+
+a {
+    color: black;
+}
+
+abbr {
+    text-decoration: underline;
 }
